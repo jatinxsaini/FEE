@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice Challenge Form</title>
+</head>
+<body>
+  <form style="margin: 80px auto; padding: 40px; width: 320px; border: 2px solid #444; border-radius: 8px; background: #f2f2f2; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <label for="name">ENTER NAME :</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter Name" pattern="[A-Za-z]{3,}" title="Only letters, at least 3 characters" required><br><br>
+
+    <label for="email">ENTER EMAIL ID :</label><br>
+    <input type="email" id="email" name="email"placeholder="Enter Email" required><br><br>
+
+    <label for="age">ENTER AGE:</label><br>
+    <input type="number" id="age" name="age" min="18" max="60" required><br><br>
+
+    <label for="phone">ENTER MOBILE NUMBER :</label><br>
+    <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter exactly 10 digits" required><br><br>
+
+    <label for="password">Enter PASSWORD :</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter Password"required><br><br>
+
+    <label for="confirm_password">CONFIRM PASSWORD:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
