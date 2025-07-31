@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>European Travel Highlights</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #fdf6e3;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #5c4033;
+        }
+
+        .btn-group {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .btn-group button {
+            background: #d2691e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #e0cda9;
+            text-align: left;
+        }
+
+        th {
+            background: #d2691e;
+            color: white;
+        }
+
+        tr:nth-child(even) td {
+            background: #fff8ee;
+        }
+
+        tr:nth-child(odd) td {
+            background: #fbe9d0;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        iframe {
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #d2691e;
+            color: white;
+            font-size: 24px;
+            border: none;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .fab:hover {
+            background: #a0522d;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="top">MY TRAVEL VLOG</h1>
+
+    <div class="btn-group">
+        <button onclick="location.href='#top'">Top</button>
+        <button onclick="location.href='#table'">View Table</button>
+        <button onclick="location.href='#video'">Watch Video</button>
+    </div>
+
+    <table id="table">
+        <tr>
+            <th>Visited?</th>
+            <th>Country</th>
+            <th>Best Locations</th>
+            <th>Activities</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Germany</td>
+            <td>Munich</td>
+            <td>Beer Culture, Bavarian Charm</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Spain</td>
+            <td>Barcelona, Madrid, Seville</td>
+            <td>Architecture, Museums, Alcazar Palace</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Netherlands</td>
+            <td>Amsterdam</td>
+            <td>Rijksmuseum, Van Gogh Museum, Vibrant Cultural Scene</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Italy</td>
+            <td>Venice</td>
+            <td>Canals and Romantic Ambiance</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Switzerland</td>
+            <td>Zurich</td>
+            <td>Lake Zurich, Grossmünster, Fraumünster Church</td>
+        </tr>
+    </table>
+
+    <h2 id="video">Explore Europe: Travel Vlog</h2>
+    <div class="video-container">
+        <iframe width="800" height="450"
+                src="https://www.youtube.com/embed/O4PmcP9ecE4?si=j0iITtzq-iqg5Lln"
+                frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
+</body>
+</html>
